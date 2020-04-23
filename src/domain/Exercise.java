@@ -11,17 +11,17 @@ package domain;
  */
 public class Exercise {
 	
-public static byte recursion(byte i, int j) {
+public static byte recursion(byte n, int m) {
 		 
-	if (i == 0) {
-	return (byte) (j + 1);
+	if (n == 0) {
+	return (byte) (m + 1);
 	}
-        else if (j == 0 && i > 0) {
-	return recursion((byte) (i - 1), 1);
+        else if (m == 0 && n > 0) {
+	return recursion((byte) (n - 1), 1);
 	} 
 		
 	else {
-	return recursion((byte) (i - 1), recursion(i, (byte) (j - 1)));
+	return recursion((byte) (n - 1), recursion(n, (byte) (m - 1)));
 }
  }
   }
