@@ -10,30 +10,18 @@ package domain;
  * @author Admin
  */
 public class Exercise {
-
-    /**
-     * Changes a decimal number to binary
-     * @param R integer
-     * @return the specified number
-     */
-    public static String CalculateBinarySystem(int R){
-        return (String) (Integer.toBinaryString((int) R));
-    }
-    
-    /**
-     * Changes a decimal number to octal
-     * @param R integer 
-     *  @return the specified number in octal notation
-     */
-    public static String CalculateOctalSystem(int R){
-        return (String) (Integer.toOctalString((int) R));
-    }
-    
-    /**
-     * @param R integer 
-     *  @return the specified number in hexadecimal notation
-     */
-    public static String CalculateHexadecimalSystem(int R){
-        return (String) (Integer.toHexString((int) R));
-    }
+	
+public static byte recursion(byte i, int j) {
+		 
+	if (i == 0) {
+	return (byte) (j + 1);
+	}
+        else if (j == 0 && i > 0) {
+	return recursion((byte) (i - 1), 1);
+	} 
+		
+	else {
+	return recursion((byte) (i - 1), recursion(i, (byte) (j - 1)));
 }
+ }
+  }

@@ -11,21 +11,15 @@ package test;
 import domain.Exercise;
 
 public class TestResult {
-
-   
     public static void main(String[] args) {
-        
-        int R=100000;
-        if(R>=100000 && R<1000000)
-            {
-            System.out.println("Number "+R+" in binary cleaning system: "
-                    + ""+Exercise.CalculateBinarySystem(R)+"\n"
-                    + "in octal calculus: "+Exercise.CalculateOctalSystem(R)
-                    +"\nin hexadecimal number system: "
-                    +Exercise.CalculateHexadecimalSystem(R));
-            }
+        byte i = 1;
+	byte j = 1;
+	 if(i > 0 && j > 0) {
+/** Invokes a recursive function
+ */
+	System.out.println("The answer will be " + Exercise.recursion(i, j)); 
+        }
         else{
-            System.out.println("The number R must be six-digit");
-            }
+          System.out.println("You have entered incorrect numbers.\nIntegers must be entered.\nPlease correct the condition.");}
     }
 }
