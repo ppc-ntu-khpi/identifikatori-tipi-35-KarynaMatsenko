@@ -1,12 +1,25 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package test;
-
+/**
+ *
+ * @author Admin
+ */
 import domain.Exercise;
 
 public class TestResult {
-
     public static void main(String[] args) {
-
-        int R=10;
-        System.out.println("Area of a circle for R="+R+"m is "+Exercise.Calculate(R)+"m"+'\u00B2');
+        byte n = 1;
+	byte m = 1;
+	 if(n > 0 && m > 0) {
+/** Invokes a recursive function
+ */
+	System.out.println("The answer will be " + Exercise.recursion(n, m)); 
+        }
+        else{
+          System.out.println("You have entered incorrect numbers.\nIntegers must be entered.\nPlease correct the condition.");}
     }
 }
